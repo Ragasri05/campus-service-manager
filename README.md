@@ -45,30 +45,6 @@ A full-stack web application for managing campus service requests such as IT iss
 - Git
 - GitHub
 
-## System Architecture
-
-```text
-                  User
-                   |
-                   v
-          HTML / CSS / JavaScript
-                   |
-                   | HTTP / REST
-                   v
-        ServiceRequestController
-                   |
-                   v
-         ServiceRequestService
-                   |
-                   v
-       ServiceRequestRepository
-                   |
-                   v
-             JPA / Hibernate
-                   |
-                   v
-              PostgreSQL
-```
 ## Project Structure
 ```
 campus-service-manager/
@@ -326,6 +302,6 @@ Represents a service request stored in the database.
 
 ## Author
 
-**Adapa Raga Sridatta**
-**Computer Science and Engineering**
+**Adapa Raga Sridatta**<br>
+**Computer Science and Engineering**<br>
 **Amrita Vishwa Vidyapeetham, Amritapuri**
