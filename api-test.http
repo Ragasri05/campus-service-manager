@@ -1,0 +1,10 @@
+### Create a service request
+POST http://localhost:8081/api/requests
+Content-Type: application/json
+
+{
+  "title": "Hostel Wi-Fi not working",
+  "description": "Wi-Fi connection is unavailable in the hostel since morning.",
+  "category": "IT",
+  "priority": "HIGH"
+}

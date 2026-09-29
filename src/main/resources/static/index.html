@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Service Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Campus Service Manager</h1>
+        <p>Manage campus service requests efficiently</p>
+    </div>
+</header>
+
+<main>
+
+    <section class="form-section">
+        <h2>Create Service Request</h2>
+
+        <form id="requestForm">
+
+            <input
+                    type="text"
+                    id="title"
+                    placeholder="Request title"
+                    required
+            >
+
+            <textarea
+                    id="description"
+                    placeholder="Describe the issue..."
+                    required
+            ></textarea>
+
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="IT">IT Support</option>
+                <option value="HOSTEL">Hostel</option>
+                <option value="MAINTENANCE">Maintenance</option>
+                <option value="LIBRARY">Library</option>
+                <option value="ACADEMIC">Academic</option>
+            </select>
+
+            <select id="priority" required>
+                <option value="">Select Priority</option>
+                <option value="LOW">Low</option>
+                <option value="MEDIUM">Medium</option>
+                <option value="HIGH">High</option>
+            </select>
+
+            <button type="submit">
+                Submit Request
+            </button>
+
+        </form>
+    </section>
+
+
+    <section class="requests-section">
+
+        <div class="section-header">
+            <h2>Service Requests</h2>
+
+            <button onclick="loadRequests()" class="refresh-btn">
+                Refresh
+            </button>
+        </div>
+
+        <div id="requestsContainer">
+            <p>Loading requests...</p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
